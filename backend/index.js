@@ -7,7 +7,7 @@ const app = mongoose();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect('mongodb://localhost:27017/Documental')   
+mongoose.connect('mongodb://localhost:27017/Citas')   
     .then(db => console.log('conexion exitosa'))
     .catch(err => console.log('error: ', err))
 
