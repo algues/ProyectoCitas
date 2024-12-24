@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 const citasSchema = new mongoose.Schema({
-    fecha: {type:Date, required:true},
+    fecha: {type:String, required:true},
     hora: {type:String, required:true},
     paciente: {type:String, required:true},
     medico: {type:String, required:true},
