@@ -50,6 +50,41 @@ app.get('/tratamientos', async (req,res) =>{
     .catch(err => res.json(err))
 })
 
+app.post('/pacientes', async (req,res) =>{
+    const paciente = new pacienteModel(req.body);
+    const result = await paciente.save()
+    .then(result => res.json('Success'))
+    .catch(err => res.json(err))
+})
+
+app.post('/medicos', async (req,res) =>{
+    const medico = new medicoModel(req.body)
+    const result = await medico.save()
+    .then(result => res.json('Success'))
+    .catch(err => res.json(err))
+})
+
+app.post('/consultorios', async (req,res) =>{
+    const consultorio = new consultorosModel(req.body)
+    const result = await consultorio.save()
+    .then(result => res.json('Success'))
+    .catch(err => res.json(err))
+})
+
+app.post('/citas', async (req,res) =>{
+    const cita = new citasModel(req.body)
+    const result = cita.save()
+    .then(result => res.json('Success'))
+    .catch(err => res.json(err))
+})
+
+app.post('/tratamientos', async (req,res) =>{
+    const tratamiento = new tratamientosModel(req.body)
+    const result = tratamiento.save()
+    .then(result => res.json('Success'))
+    .catch(err => res.json(err))
+})
+
 app.listen(8800, () =>{
     console.log("Connected to Backend");
 });
