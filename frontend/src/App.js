@@ -1,7 +1,12 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Home from './components/home';
-
+import Login from './components/login';
+import AddPacientes from './components/pacientes/addPacientes';
+import AddMedicos from './components/medicos/addMedicos';
+import AddConsultorios from './components/consultorios/addConsutorios';
+import AddTratamientos from './components/tratamientos/addTratamiento';
+import AddCitas from './components/citas/AddCitas';
 
 function App() {
   return (
