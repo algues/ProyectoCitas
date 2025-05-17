@@ -208,6 +208,13 @@ app.delete('/tratamientos/:_id', async (req,res) =>{
     res.json(result)
 })
 
+app.post('/login', async (req,res) =>{
+    const {username, password} = req.body;
+    const result = await usuarioModel.findOne({username, password})
+    if (result) return res.json("Success")
+    return res.json("Usuario no registrado")
+})
+
 app.listen(8800, () => {
     console.log('Connected to Backend')
 });
