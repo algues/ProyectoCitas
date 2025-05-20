@@ -11,7 +11,7 @@ const Pacientes = () => {
         const fecthAllPacientes = async () =>{
             try{
                 const res = await axios.get("http://localhost:8800/pacientes/");
-                setPacientes(rs.data);
+                setPacientes(res.data);
 
             }catch(err){
                 console.log(err)
