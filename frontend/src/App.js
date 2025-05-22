@@ -7,6 +7,11 @@ import AddMedicos from './components/medicos/addMedicos';
 import AddConsultorios from './components/consultorios/addConsutorios';
 import AddTratamientos from './components/tratamientos/addTratamiento';
 import AddCitas from './components/citas/AddCitas';
+import Pacientes from './components/pacientes';
+import Medicos from './components/medicos';
+import Citas from './components/citas';
+import Consultorios from './components/tratamientos';
+import Tratamientos from './components/tratamientos';
 
 function App() {
   return (
