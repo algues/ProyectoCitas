@@ -35,19 +35,19 @@ const Citas = () => {
             <Table>
                 <thead>
                     <tr>
-                      <td colSpan={3}><h3 className='titulo'>Administrar Citas</h3></td>
-                        </tr> 
-                        <tr className='table-info'>
-                           <th>Id</th>               
-                           <th>Fecha</th> 
-                           <td>Hora</td>
-                           <td>Paciente</td>
-                           <td>medico</td>
-                           <td>Consultorio</td>
-                           <td>Estado</td>
-                           <td>Observaciones</td>
-                           <th>Acciones</th>
-                        </tr>        
+                      <td colSpan={9}><h3 className='titulo'>Administrar Citas</h3></td>
+                    </tr> 
+                    <tr className='table-info'>
+                        <th>Id</th>               
+                        <th>Fecha</th> 
+                        <td>Hora</td>
+                        <td>Paciente</td>
+                        <td>medico</td>
+                        <td>Consultorio</td>
+                        <td>Estado</td>
+                        <td>Observaciones</td>
+                        <th>Acciones</th>
+                    </tr>        
                 </thead>
                 <tbody>
                    {citas.map((cita) =>(
@@ -66,7 +66,7 @@ const Citas = () => {
                 ))}
                 </tbody>
                    <tr>
-                     <td colSpan={3}>
+                     <td colSpan={9}>
                        <button className='btn btn-info'><Link to="/addCitas">Add Citas</Link></button>
                        <button className='btn btn-warning'><Link to="/home">Home</Link></button>
                      </td>
