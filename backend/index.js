@@ -38,7 +38,7 @@ app.get('/citas', async (req,res) =>{
     .catch(err = res.json(err))
 });
 
-app.get('consultorios', async (req,res) =>{
+app.get('/consultorios', async (req,res) =>{
     await consultorioModel.find()
     .then(data => res.json(data))
     .catch(err => res.json(err))
@@ -78,7 +78,7 @@ app.get('/citas/:_id', async (req,res) =>{
     .catch(err => res.json(err))
 });
 
-app.get('tratamientos/:_id', async (req,res) =>{
+app.get('/tratamientos/:_id', async (req,res) =>{
     const tratamientosId = req.params._id
     await tratamientosModel.find({_id:tratamientosId})
     .then(data => res.json(data))
@@ -113,7 +113,7 @@ app.post('/consultorios', async (req,res)=>{
     .catch(err => res.json(err))
 });
 
-app.post('tratamientos', async (req,res) =>{
+app.post('/tratamientos', async (req,res) =>{
     const consultorio = new consultorioModel(req.body);
     const result = consultorio.save()
     .then(result => res.json("Success"))
@@ -165,7 +165,7 @@ app.put('/citas/:_id', async (req,res) =>{
     res.json(result)
 });
 
-app.put('tratamientos/:_id', async (req,res) =>{
+app.put('/tratamientos/:_id', async (req,res) =>{
     const tratamientosId = req.params._id;
     const result = await tratamientosModel.findByIdAndUpdate({_id:tratamientosId}, {
         fechAsignada: req.body.fechaAsignada,
