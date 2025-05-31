@@ -63,7 +63,7 @@ const UpdateCitas = () => {
              <label>Observaciones:</label>
              <textarea type="text" name="observaciones" onChange={handleChange} value={cita.observaciones} rows={3}></textarea>
              <button className="btn btn-warning" onClick={handleClick}>Update</button>
-             <button className="btn btn-info"><Link to="/medicos">Médicos</Link></button>
+             <button className="btn btn-info"><Link to="/citas">Citas</Link></button>
           </form> 
         </div>  
     )
