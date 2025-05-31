@@ -45,7 +45,7 @@ const UpdateConsultorios = () => {
              <label>Nombre:</label>
              <input type="text" name="nombre" onChange={handleChange} value={consultorio.nombre}></input>
              <button className="btn btn-warning" onClick={handleClick}>Update</button>
-             <button className="btn btn-info"><Link to="/medicos">Médicos</Link></button>
+             <button className="btn btn-info"><Link to="/consultorios">Consultorios</Link></button>
           </form> 
         </div>  
     )
