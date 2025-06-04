@@ -1,5 +1,6 @@
 import react from 'react';
 import axios from 'axios';
+import { useState } from 'react';
 import { Link, useNavigate} from 'react-router-dom';
 
 const AddPacientes = () => {
@@ -36,8 +37,8 @@ const AddPacientes = () => {
     }
 
     return(
-      <div>
-         <form>
+      <div className='container'>
+         <form className='form'>
             <h5>Adición de Médicos</h5>
             <label>Identificación:</label>
             <input type='numeric' name='identificacion' onChange={handleChange}></input>
