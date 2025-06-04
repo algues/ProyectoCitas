@@ -13,18 +13,22 @@ import Consultorios from './components/consultorios';
 import Tratamientos from './components/tratamientos';
 import AddTratamientos from './components/tratamientos/addTratamientos';
 import UpdatePacientes from './components/pacientes/updatePacientes';
+import UpdateMedicos from './components/medicos/updateMedicos';
+import UpdateConsultorios from './components/consultorios/updateConsultorios';
+import UpdateCitas from './components/citas/updateCitas';
+import UpdateTratamintos from './components/tratamientos/updateTratamientos';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="">
       <Router>
            <Routes>
                <Route path='/' element={<Login />}></Route>
                <Route path='/home' element={<Home />}></Route>
                <Route path='/pacientes' element={<Pacientes />}></Route>               
                <Route path='/addPacientes' element={<AddPacientes />}></Route>
-               <Route path='/updatePacietes' element={<UpdatePacientes />}></Route>
+               <Route path='/updatePacientes' element={<UpdatePacientes />}></Route>
                <Route path='/medicos' element={<Medicos />}></Route>
                <Route path='/addMedicos' element={<AddMedicos />}></Route>
                <Route path='/updateMedicos/:_id' element={<UpdateMedicos />}></Route>
