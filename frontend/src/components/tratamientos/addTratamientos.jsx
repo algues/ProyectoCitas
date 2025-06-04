@@ -24,7 +24,7 @@ const AddTratamientos = () => {
              try{
                  await axios.post("http://localhost:8000/tratamientos", tratamientos)
                  .then(res =>{
-                     if(res.data == "Success"){
+                     if(res.data === "Success"){
                          window.alert("Trataminto registrado con éxito")
                          navigate('/tratamientos')
                      }else{
@@ -37,8 +37,8 @@ const AddTratamientos = () => {
          }
      
          return(
-         <div>
-            <form>
+         <div className='container'>
+            <form className='form'>
                <h5>Adición de Tratamientos</h5>
                <label>Fecha Asignada:</label>
                <input type='date' name="fechaAsignada" onChange={handleChange}></input>
