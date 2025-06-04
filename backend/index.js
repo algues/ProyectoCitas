@@ -3,6 +3,10 @@ import cors from 'cors';
 import mongoose from 'mongoose';
 import citasModel from './models/citasModel.js';
 import usuariosModel from './models/usuariosModel.js'
+import pacienteModel from './models/pacienteModel.js'
+import medicoModel from './models/medicoModel.js'
+import consultorioModel from './models/consultorioModel.js'
+import tratamientosModel from './models/tratamientosModel.js'
 
 const app = express();
 
