@@ -11,7 +11,7 @@ const UpdateCitas = () => {
         axios.get("http://localhost:8800/citas/"+_id)
         .then(res => {
             console.log(res)
-            setCitas(res.data[0])
+            setCita(res.data[0])
         })
         .catch(err => console.log(err))
     }, [])
@@ -49,7 +49,7 @@ const UpdateCitas = () => {
           <form className="form">
              <h5 className="titulo">Modificar  Citas</h5>
              <label>Fecha:</label>
-             <input type="date" name="fecha" onChange={handleChange} value={cita.fecha}></input>
+             <input type="text" name="fecha" onChange={handleChange} value={cita.fecha}></input>
              <label>Hora:</label>
              <input type="text" name="hora" onChange={handleChange} value={cita.hora}></input>
              <label>Paciente:</label>
@@ -57,7 +57,7 @@ const UpdateCitas = () => {
              <label>Médico:</label>
              <input type="number" name="medico" onChange={handleChange} value={cita.medico}></input>
              <label>Consultorio:</label>
-             <input type="number" name="consultorio" onChange={handleChange} value={cita.consultorio}></input>
+             <input type="text" name="consultorio" onChange={handleChange} value={cita.consultorio}></input>
              <label>Estado:</label>
              <input type="text" name="estado" onChange={handleChange} value={cita.estado}></input>
              <label>Observaciones:</label>
