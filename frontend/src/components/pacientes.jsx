@@ -31,7 +31,7 @@ const Pacientes = () => {
     }
 
     return(
-        <did>
+        <div>
             <Table>
                 <thead>
                    <tr>
@@ -68,7 +68,7 @@ const Pacientes = () => {
                   </td>
                 </tr>
             </Table>
-        </did>
+        </div>
     )
 }
 
