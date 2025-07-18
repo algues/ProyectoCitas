@@ -25,7 +25,7 @@ const AddCitas = () => {
              try{
                  await axios.post("http://localhost:8800/citas", citas)
                  .then(res =>{
-                     if(res.data == "Success"){
+                     if(res.data === "Success"){
                          window.alert("Cita registrado con éxito")
                          navigate('/citas')
                      }else{
