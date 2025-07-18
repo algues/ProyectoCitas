@@ -16,13 +16,13 @@ const AddTratamientos = () => {
          const navigate = useNavigate();
      
          const handleChange = (e) =>{
-             setTratamientos(prev =>({...prev, [e.target.name]:e.taget.value}));
+             setTratamientos(prev =>({...prev, [e.target.name]:e.target.value}));
          };
      
          const handleClick = async e =>{
              e.preventDefault()
              try{
-                 await axios.post("http://localhost:8000/tratamientos", tratamientos)
+                 await axios.post("http://localhost:8800/tratamientos", tratamientos)
                  .then(res =>{
                      if(res.data === "Success"){
                          window.alert("Trataminto registrado con éxito")
