@@ -38,8 +38,8 @@ const AddCitas = () => {
          }
      
          return(
-         <div>
-            <form>
+         <div className='container'>
+            <form className='form'>
                <h5>Adición de Citas</h5>
                <label>Fecha:</label>
                <input type='date' name="fecha" onChange={handleChange}></input>
