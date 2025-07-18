@@ -10,7 +10,7 @@ const AddTratamientos = () => {
              fechaInicio: "",
              fechaFin: "",
              observaciones: "",
-             paciete: ""             
+             paciente: ""             
          })
      
          const navigate = useNavigate();
