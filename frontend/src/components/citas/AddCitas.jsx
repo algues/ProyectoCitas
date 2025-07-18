@@ -23,7 +23,7 @@ const AddCitas = () => {
          const handleClick = async e =>{
              e.preventDefault()
              try{
-                 await axios.post("http://localhost:8000/citas", citas)
+                 await axios.post("http://localhost:8800/citas", citas)
                  then(res =>{
                      if(res.data == "Success"){
                          window.alert("Cita registrado con éxito")
