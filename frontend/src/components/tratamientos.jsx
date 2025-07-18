@@ -22,7 +22,7 @@ const Tratamientos = () => {
 
     }, []);
 
-    const handleDelete = async (e) => {
+    const handleDelete = async (_id) => {
         try {
             await axios.delete("http://localhost:8800/tratamientos/" + _id);
             window.location.reload();
