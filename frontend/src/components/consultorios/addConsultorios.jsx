@@ -17,7 +17,7 @@ const AddConsultorios = () =>{
     const handleClick = async e =>{
         e.preventDefault()
         try{
-            await axios.post("http://localhost:8000/consultorios", consultorio)
+            await axios.post("http://localhost:8800/consultorios", consultorio)
             .then(res =>{
                 if(res.data == "Success"){
                     window.alert("Consultorio registrado con éxito")
