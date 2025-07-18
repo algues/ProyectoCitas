@@ -21,7 +21,7 @@ const Citas = () => {
         fecthAllCitas();
     }, []);
     
-    const handleDelete = async (e) => {
+    const handleDelete = async (_id) => {
         try{
             await axios.delete("http://localhost:8800/citas/"+_id);
             window.location.reload();
