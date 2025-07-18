@@ -17,7 +17,7 @@ const AddCitas = () => {
          const navigate = useNavigate();
      
          const handleChange = (e) =>{
-             setCitas(prev =>({...prev, [e.target.name]:e.taget.value}));
+             setCitas(prev =>({...prev, [e.target.name]:e.target.value}));
          };
      
          const handleClick = async e =>{
