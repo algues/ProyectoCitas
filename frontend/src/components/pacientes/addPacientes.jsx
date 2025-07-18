@@ -48,7 +48,7 @@ const AddPatients = () => {
             <label>Apellidos:</label>
             <input type='text' name='apellidos' onChange={handleChange}></input>
             <label>Fecha Nacimiento:</label>
-            <input type='text' name='fechaNacimiento' onChange={handleChange}></input>
+            <input type='date' name='fechaNacimiento' onChange={handleChange}></input>
             <label>Sexo:</label>
             <input type='text' name='sexo' onChange={handleChange}></input>
             <button className='btn btn-info' onClick={handleClick}>Registrar</button>
