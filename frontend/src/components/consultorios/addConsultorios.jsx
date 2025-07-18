@@ -11,7 +11,7 @@ const AddConsultorios = () =>{
     const navigate = useNavigate();
 
     const handleChange = (e) =>{
-        setConsultorio(prev =>({...prev, [e.target.name]:e.taget.value}));
+        setConsultorio(prev =>({...prev, [e.target.name]:e.target.value}));
     };
 
     const handleClick = async e =>{
