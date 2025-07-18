@@ -21,7 +21,7 @@ const AddConsultorios = () =>{
             .then(res =>{
                 if(res.data == "Success"){
                     window.alert("Consultorio registrado con éxito")
-                    navigate('/consultorio')
+                    navigate('/consultorios')
                 }else{
                     window.alert("Registro fallido")
                 }
