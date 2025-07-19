@@ -52,7 +52,7 @@ const UpdateMedicos = () => {
              <label>Nombres:</label>
              <input type="text" name="nombres" onChange={handleChange} value={medico.nombres}></input>
              <label>Especiaidad:</label>
-             <input type="date" name="especialidad" onChange={handleChange} value={medico.especialidad}></input>
+             <input type="text" name="especialidad" onChange={handleChange} value={medico.especialidad}></input>
              <button className="btn btn-warning" onClick={handleClick}>Update</button>
              <button className="btn btn-info"><Link to="/medicos">Médicos</Link></button>
           </form> 
