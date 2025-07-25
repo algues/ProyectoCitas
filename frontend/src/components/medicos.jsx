@@ -32,7 +32,7 @@ const Medicos = () => {
 
     return(
         <did>
-            <Table>
+            <table className='table table-bordered border-primary'>
                 <thead>
                    <tr>
                      <td colSpan={7}><h3 className='titulo'>Administrar Medicos</h3></td>
@@ -65,7 +65,7 @@ const Medicos = () => {
                     <button className='btn btn-warning'><Link to="/home">Home</Link></button>
                   </td>
                 </tr>
-            </Table>
+            </table>
         </did>
     )
 }
