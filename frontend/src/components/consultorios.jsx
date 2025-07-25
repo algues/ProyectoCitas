@@ -1,5 +1,4 @@
 import React from 'react';
-import Table from 'react-bootstrap/Table';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
@@ -32,7 +31,7 @@ const Consultorios = () => {
 
     return(
         <div>
-            <Table>
+            <table className='table table-bordered border-primary'>
                 <thead>
                    <tr>
                      <td colSpan={3}><h3 className='titulo'>Administrar Consultorios</h3></td>
@@ -59,7 +58,7 @@ const Consultorios = () => {
                     <button className='btn btn-warning'><Link to="/home">Home</Link></button>
                   </td>
                 </tr>
-            </Table>
+            </table>
         </div>
     )
 }
