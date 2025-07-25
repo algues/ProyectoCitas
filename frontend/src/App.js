@@ -17,6 +17,12 @@ import UpdateMedicos from './components/medicos/updateMedicos';
 import UpdateConsultorios from './components/consultorios/updateConsultorios';
 import UpdateCitas from './components/citas/updateCitas';
 import UpdateTratamintos from './components/tratamientos/updateTratamientos';
+import ReportePacientes from './components/pacientes/reportePacientes';
+import ReporteMedicos from './components/medicos/reporteMedico';
+import ReporteConsultorios from './components/consultorios/reporteConsultorios';
+import ReporteCitas from './components/citas/reporteCitas';
+import ReporteTratamientos from './components/tratamientos/reporteTratamientos';
+
 
 function App() {
   return (
@@ -41,6 +47,11 @@ function App() {
                <Route path='/tratamientos' element={<Tratamientos />}></Route>
                <Route path='/addTratamientos' element={<AddTratamientos />}></Route>
                <Route path='/updateTratamiento/:_id' element={<UpdateTratamintos />}></Route>
+               <Route path='/reportePacientes' element={<ReportePacientes />}></Route>
+               <Route path='/reporteMedicos' element={<ReporteMedicos />}></Route>
+               <Route path='/reporteConsultorios' element={<ReporteConsultorios />}></Route>
+               <Route path='/reporteCitas' element={<ReporteCitas />}></Route>
+               <Route path='/reporteTratamientos' element={<ReporteTratamientos />}></Route>
            </Routes>
        </Router>          
       </header>
