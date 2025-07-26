@@ -55,4 +55,4 @@ const AddMedicos = () => {
     )
 }
 
-export default AddMedcos;
+export default AddMedicos;
