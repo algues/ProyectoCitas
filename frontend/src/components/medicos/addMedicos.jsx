@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useState } from 'react';
 import { Link, useNavigate} from 'react-router-dom';
 
-const AddPacientes = () => {
+const AddMedicos = () => {
 
     const [medico, setMedico] = useState({
         identificacion: "",
@@ -55,4 +55,4 @@ const AddPacientes = () => {
     )
 }
 
-export default AddPacientes;
+export default AddMedcos;
