@@ -16,7 +16,7 @@ const Login = () => {
         try{
             await axios.post("http://localhost:8800/login/", {username, password})
             .then(res =>{
-                if(res.data == "Success"){
+                if(res.data === "Success"){
                    window.alert("Wilcome: "+ username)
                    navigate("/home")
                 }else{
