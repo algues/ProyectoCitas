@@ -9,5 +9,5 @@ const medicoSchema = new mongoose.Schema({
    {timestamps:true}
 )
 
-const medicoModel = medicoModel.model('medicos', medicoSchema)
+const medicoModel = mongoose.model('medicos', medicoSchema)
 export default medicoModel;
